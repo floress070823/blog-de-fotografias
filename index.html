@@ -51,7 +51,7 @@
 
         /* PORTADA (HERO) */
         .portada {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('img/gift-habeshaw-JlaHTZ_Rp7M-unsplash.o.jpg');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('img/gift-habeshaw.jpg');
             background-size: cover;
             background-position: center;
             height: 85vh;
@@ -101,8 +101,25 @@
             font-size: 2.8rem;
             margin-bottom: 20px;
         }
-
-        /* ABOUT US */
+        .about-us {
+             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('img/conor-luddy.jpg'); 
+              background-size: cover;          
+              background-position: center;    
+              height: 85vh;                   
+              width: 100%;
+              max-width: 100%;
+              box-sizing: border-box;         
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start; 
+              padding-left: 80px;
+            }
+            .about-us h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
@@ -267,7 +284,7 @@
     </header>
 
     <!-- SECCIÓN ABOUT US -->
-    <section id="about">
+    <section id="about" class="about-us">
         <h2>About Us</h2>
         <p class="about-text">
             Es una exposición fotográfica que hemos ido tomando al rededor de este ciclo aplicando teóricamente y prácticamente lo aprendido y editando asertivamente las imágenes para poder obtener el mejor resultado posible.
@@ -282,8 +299,8 @@
         <div class="galeria-grid">
             
             <!-- Tarjeta 1 -->
-            <div class="tarjeta-foto" onclick="abrirModal('img/imagen_de_cotorro.jpg', 'Cotorro Silvestre', 'Captura enfocada en el plumaje y el comportamiento natural. Trabajo de edición centrado en acentuar la vibrancia de los tonos verdes.')">
-                <img src="img/imagen_de_cotorro.jpg" alt="Cotorro">
+            <div class="tarjeta-foto" onclick="abrirModal('img/andrew-pons.jpg', 'Cotorro Silvestre', 'Captura enfocada en el plumaje y el comportamiento natural. Trabajo de edición centrado en acentuar la vibrancia de los tonos verdes.')">
+                <img src="img/andrew-pons.jpg" alt="Cotorro">
                 <div class="tarjeta-info">
                     <h3>Cotorro Silvestre</h3>
                     <p>Haz clic para ver la imagen ampliada y el concepto fotográfico.</p>
@@ -291,8 +308,8 @@
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="tarjeta-foto" onclick="abrirModal('img/imagen_2(flor_amarilla).jpg', 'Flor Amarilla', 'Estudio de macrofotografía resaltando la textura de los pétalos y la luz natural reflejada sobre la estructura floral.')">
-                <img src="img/imagen_2(flor_amarilla).jpg" alt="Flor Amarilla">
+            <div class="tarjeta-foto" onclick="abrirModal('img/julia-ly.jpg', 'Flor Amarilla', 'Estudio de macrofotografía resaltando la textura de los pétalos y la luz natural reflejada sobre la estructura floral.')">
+                <img src="img/julia-ly.jpg" alt="Flor Amarilla">
                 <div class="tarjeta-info">
                     <h3>Flor Amarilla</h3>
                     <p>Haz clic para ver la imagen ampliada y el concepto fotográfico.</p>
@@ -300,10 +317,10 @@
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="tarjeta-foto" onclick="abrirModal('img/imagen_3(loro_posando).jpg', 'Loro Posando', 'Retrato animal aprovechando la profundidad de campo para aislar al sujeto del fondo con una pose natural.')">
-                <img src="img/imagen_3(loro_posando).jpg" alt="Loro Posando">
+            <div class="tarjeta-foto" onclick="abrirModal('img/nir-himi.jpg', 'frailecillo tufted', 'Retrato animal aprovechando la profundidad de campo para aislar al sujeto del fondo con una pose natural.')">
+                <img src="img/nir-himi.jpg" alt="frailecillo tufted">
                 <div class="tarjeta-info">
-                    <h3>Loro Posando</h3>
+                    <h3>frailecillo tufteds</h3>
                     <p>Haz clic para ver la imagen ampliada y el concepto fotográfico.</p>
                 </div>
             </div>
