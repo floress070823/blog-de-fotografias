@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto y Modelo - Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0b0f19; color: #fff; margin: 0; padding: 40px 20px; }
+                body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #0b0f19; 
+            background-image: linear-gradient(rgba(11, 15, 25, 0.88), rgba(11, 15, 25, 0.88)), url('img/fondo.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+            color: #ffffff; 
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        .contenedor { max-width: 1100px; margin: 0 auto; }
+        
+        .boton-volver { display: inline-block; color: #9ca3af; text-decoration: none; margin-bottom: 20px; transition: color 0.3s; }
+        .boton-volver:hover { color: #fff; }
+        
+        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 40px; text-align: center; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .item { 
+            background: #131a29; 
+            border-radius: 14px; 
+            overflow: hidden; 
+            border: 1px solid #232d42; 
+            cursor: pointer; 
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+        }
+
+        .item img { width: 100%; height: 350px; object-fit: cover; display: block; }
+        .item-texto { padding: 20px; }
+        .item-texto h3 { margin: 0; font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff;}
+
+        .item-texto p { 
+            color: #9ca3af; 
+            font-size: 0.95rem; 
+            margin: 15px 0 0 0; 
+            line-height: 1.6; 
+            display: none; 
+            animation: aparecer 0.4s ease; 
+        }
+
+        .item.mostrar-desc p {
+            display: block;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <a href="index.html" class="boton-volver">← Volver al Inicio</a>
+        <h1>Producto y Modelo</h1>
+
+        <div class="grid">
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/copa1.jpeg" alt="Copa 1">
+                <div class="item-texto">
+                    <h3>Un brindis a medianoche.</h3>
+                    <p>Esta fotografía busca transmitir lo que es la elegancia, y celebración. Ya que, al mostrar la copa en primer plano, junto con la iluminación oscura y el vestuario brillante, crea un ambiente sofisticado y un poco misterioso, estas fotografías buscan transmitir lo conceptual o publicidad para bebidas, eventos o contenido de redes sociales, buscando transmitir una sensacion de lujo y una experiencia especial.</p>
+                </div>
+            </div>
+
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/copa2.jpeg" alt="Copa 2">
+                <div class="item-texto">
+                    <h3>Un brindis a medianoche.</h3>
+                    <p>Esta fotografía busca transmitir lo que es la elegancia, y celebración. Ya que, al mostrar la copa en primer plano, junto con la iluminación oscura y el vestuario brillante, crea un ambiente sofisticado y un poco misterioso, estas fotografías buscan transmitir lo conceptual o publicidad para bebidas, eventos o contenido de redes sociales, buscando transmitir una sensacion de lujo y una experiencia especial.</p>
+                </div>
+            </div>
+
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/labial.jpeg" alt="Labial">
+                <div class="item-texto">
+                    <h3>Mirada de lujo.</h3>
+                    <p>La modelo utiliza el producto como parte del retrato, mientras la iluminación y el fondo oscuro hacen que tanto su mirada como el objeto destaquen. Estas fotografías son utilizadas para elementos publicitarios de belleza para maquillaje, productos cosméticos o campañas de redes sociales, buscando presentar el producto de una forma elegante y llamativa.</p>
+                </div>
+            </div>
+
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/ayuda.jpeg" alt="Ayuda">
+                <div class="item-texto">
+                    <h3>A media luz.</h3>
+                    <p>Esta fotografía transmite elegancia y sensualidad, además el contraste entre la luz y la oscuridad crean una perspectiva forzada del labial logrando que destaque, y formando una escena intensa y llamativa. Este tipo de fotos de belleza son ideales para crear publicidad de productos de maquillaje, especialmente labiales, que busca resaltar el producto mediante una iluminación dramática y una composición más artística.</p>
+                </div>
+            </div>
+
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/espejo.jpeg" alt="Espejo">
+                <div class="item-texto">
+                    <h3>El ritual de arreglarse.</h3>
+                    <p>Esta fotografía busca transmitir seguridad, mediante una iluminación oscura y uso del espejo, esta logra que el maquillaje y la expresión de la modelo destaquen, creando una escena llamativa y promocionando lo que es el tono del labial. Este tipo de fotografía de retrato y belleza puede utilizarse para el contenido de redes sociales, campañas de maquillaje o como parte de un portafolio fotográfico.</p>
+                </div>
+            </div>
+
+            <div class="item" onclick="mostrarDescripcion(this)">
+                <img src="img/copa3.jpeg" alt="Copa 3">
+                <div class="item-texto">
+                    <h3>Penumbra de lujo.</h3>
+                    <p>Al utilizar una iluminación baja crea una sensación de misterio y sofisticación ya que es una escena un poco oscura con una luz lateral que enfoca lo que es la copa, además se puede observar entre las sombras una mirada fija de la modelo, evocando lujo, confidencialidad y elegancia nocturna. Perfectas para portadas de revistas, artículos o publicaciones sobre moda nocturna, gastronomía de lujo o estilo de vida sofisticado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescripcion(elemento) {
+            elemento.classList.toggle('mostrar-desc');
+        }
+    </script>
+</body>
+</html>
